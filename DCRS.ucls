@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="Rmiclient" project="DCRS" file="/DCRS/src/Rmiclient" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="229" y="-19"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="Rmiclient.AdvisorClient" project="DCRS" 
+    file="/DCRS/src/Rmiclient/AdvisorClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="585" width="168" x="370" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Rmiserver.Functions" project="DCRS" file="/DCRS/src/Rmiserver/Functions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="350" x="578" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="Rmiserver.RmiInterface" project="DCRS" 
+    file="/DCRS/src/Rmiserver/RmiInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="214" x="474" y="606"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <package id="5" language="java" name="Rmiserver" project="DCRS" file="/DCRS/src/Rmiserver" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="968" y="-19"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="6" language="java" name="Rmiserver.CommonServer" project="DCRS" 
+    file="/DCRS/src/Rmiserver/CommonServer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="130" x="1109" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="Rmiserver.InseServer" project="DCRS" file="/DCRS/src/Rmiserver/InseServer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="513" width="285" x="1279" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="Rmiserver.SoenServer" project="DCRS" file="/DCRS/src/Rmiserver/SoenServer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="290" x="1604" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="Rmiserver.CompServer" project="DCRS" file="/DCRS/src/Rmiserver/CompServer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="292" x="1934" y="-19"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="11" name="rmiInter"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="13">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
