@@ -1,0 +1,31 @@
+package Rmiserver;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.ArrayList;
+import java.util.HashMap;
+public class CommonServer {
+
+	public static void startRegistry(int RMIPort)
+	throws RemoteException{
+		try {
+			Registry registry = LocateRegistry.getRegistry(RMIPort);
+			registry.list(); //This call will throw an exception
+								// if registry does not already exist
+		}
+		catch (RemoteException e) {
+			System.out.println("RMI registery cannot be located at port:" + RMIPort);
+			Registry registry = LocateRegistry.createRegistry(RMIPort);
+			System.out.println("RMI registery created at port:" + RMIPort);
+		}
+	} //end startRegistery
+	
+	public static void main(String args[]) throws SecurityException, IOException {
+		CompServer.startCompServer(3535);
+		InseServer.startInseServer(3451);
+		SoenServer.startSoenServer(3894);
+	}
+}
